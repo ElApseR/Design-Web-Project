@@ -13,7 +13,8 @@ def index():
 
 @app.route('/select')
 def select():
-    return render_template('select.html')
+    table = df.to_html()
+    return render_template('select.html', table=table)
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)

@@ -9,5 +9,10 @@
     <div>
         <a href=" {{ url_for('index') }} "> home으로 가기</a>
     </div>
+    <div>
+        <table>
+            {{table|safe}}
+        </table>
+    </div>
 </body>
 </html>
